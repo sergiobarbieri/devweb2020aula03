@@ -1,5 +1,7 @@
 package br.com.drummond.aula.resources;
 
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -11,6 +13,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,6 +26,15 @@ public class CRUDAlunosResources {
 	
 	@Autowired
 	AlunoRepository alunoRepository;
+	
+	@RequestMapping(value = {"/health", "/"}, method = RequestMethod.GET)
+	public ResponseEntity<?> health() {
+		
+		LocalDateTime serverOK = LocalDateTime.now();
+		
+		return ResponseEntity.status(HttpStatus.OK).body(serverOK.toString());
+		
+	}
 	
 	/**
 	 * CRUD - Read (todos)
