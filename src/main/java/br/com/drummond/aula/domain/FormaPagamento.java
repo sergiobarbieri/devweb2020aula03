@@ -14,6 +14,9 @@ public class FormaPagamento {
 	private Integer idFormaPagto;
 	@Column(name = "forma_pagto")
 	private String formaPagto;
+	@Column(name = "qtd_parcelas")
+	private Integer qtdParcelas;
+
 
 	public Integer getIdFormaPagto() {
 		return idFormaPagto;
@@ -38,8 +41,5 @@ public class FormaPagamento {
 	public void setQtdParcelas(Integer qtdParcelas) {
 		this.qtdParcelas = qtdParcelas;
 	}
-
-	@Column(name = "qtd_parcelas")
-	private Integer qtdParcelas;
 
 }
