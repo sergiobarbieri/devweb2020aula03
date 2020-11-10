@@ -1,4 +1,8 @@
 insert into aluno (RA, nome, email)
-values (17211111,'Sergio Luis Barbieri', 'sergioluisbarbieri@gmail.com');
+values (544687,'ADRIANA DE OLIVEIRA BARBOSA', 'adriana@drummond.com.br');
 insert into aluno (RA, nome, email)
-values (17222222,'Antonio Carlos da Silva', 'acsilva@gmail.com');
+values (553768,'GRACIELI CORREIA DA SILVA', 'gracieli@drummond.com');
+insert into aluno (RA, nome, email)
+values (182000537,'GUSTAVO SILVA DE OLIVEIRA', 'gustavo@drummond.com');
+insert into aluno (RA, nome, email)
+values (182000815,'NATHALIA CARVALHO NOBRE', 'nathalia@drummond.com');
